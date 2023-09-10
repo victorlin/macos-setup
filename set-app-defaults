@@ -1,0 +1,92 @@
+#!/bin/bash
+
+## Rectangle ##
+# For moving/sizing windows.
+
+defaults write com.knollsoft.Rectangle launchOnLogin 1
+
+# CTRL + SHIFT + LEFT
+defaults write com.knollsoft.Rectangle leftHalf '{ keyCode = 123; modifierFlags = 393216; }'
+# CTRL + SHIFT + RIGHT
+defaults write com.knollsoft.Rectangle rightHalf '{ keyCode = 124; modifierFlags = 393216; }'
+# CTRL + SHIFT + UP
+defaults write com.knollsoft.Rectangle maximize '{ keyCode = 126; modifierFlags = 393216; }'
+
+# Disable all others
+defaults write com.knollsoft.Rectangle centerHalf {}
+defaults write com.knollsoft.Rectangle topHalf {}
+defaults write com.knollsoft.Rectangle bottomHalf {}
+defaults write com.knollsoft.Rectangle topLeft {}
+defaults write com.knollsoft.Rectangle topRight {}
+defaults write com.knollsoft.Rectangle bottomLeft {}
+defaults write com.knollsoft.Rectangle bottomRight {}
+defaults write com.knollsoft.Rectangle almostMaximize {}
+defaults write com.knollsoft.Rectangle maximizeHeight {}
+defaults write com.knollsoft.Rectangle smaller {}
+defaults write com.knollsoft.Rectangle larger {}
+defaults write com.knollsoft.Rectangle center {}
+defaults write com.knollsoft.Rectangle restore {}
+defaults write com.knollsoft.Rectangle nextDisplay {}
+defaults write com.knollsoft.Rectangle previousDisplay {}
+
+
+## Maccy ##
+defaults write org.p0deje.Maccy pasteByDefault 1
+
+
+# Tips
+# TODO: notifications off
+
+# Vivaldi
+# TODO: set as default browser
+
+
+## MenuMeters ##
+# For monitoring CPU/Memory/Network activity.
+
+defaults write com.yujitach.MenuMeters CPUAverageLowerHalfProcs -int 0
+defaults write com.yujitach.MenuMeters CPUAverageMultiProcs -int 1
+defaults write com.yujitach.MenuMeters CPUDisplayMode -int 2
+defaults write com.yujitach.MenuMeters CPUInterval -int 2
+defaults write com.yujitach.MenuMeters CPUSortByUsage -int 0
+defaults write com.yujitach.MenuMeters CPUSumAllProcsPercent -int 0
+defaults write com.yujitach.MenuMeters MemDisplayMode -int 3
+defaults write com.yujitach.MenuMeters MemInterval -int 2
+defaults write com.yujitach.MenuMeters NSColorPanelMode -int 5
+defaults write com.yujitach.MenuMeters NetDisplayMode -int 4
+defaults write com.yujitach.MenuMeters NetGraphStyle -int 1
+defaults write com.yujitach.MenuMeters NetPreferInterface -string primary
+
+# Specify what to show/hide
+defaults write com.yujitach.MenuMeters "com.ragingmenace.MenuMeterCPU" -int 1
+defaults write com.yujitach.MenuMeters "com.ragingmenace.MenuMeterDisk" -int 0
+defaults write com.yujitach.MenuMeters "com.ragingmenace.MenuMeterMem" -int 1
+defaults write com.yujitach.MenuMeters "com.ragingmenace.MenuMeterNet" -int 1
+
+
+## AltTab ##
+
+# Switch between apps
+defaults write com.lwouis.alt-tab-macos holdShortcut -string '⌘'
+
+# Switch within app
+defaults write com.lwouis.alt-tab-macos holdShortcut2 -string '⌘'
+
+# Simplify appearance
+defaults write com.lwouis.alt-tab-macos hideColoredCircles -string true
+defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels -string true
+defaults write com.lwouis.alt-tab-macos hideStatusIcons -string true
+
+## Bartender 4 ##
+
+defaults write com.surteesstudios.Bartender UpdateWelcomeMessageShowAgainB4 -bool true
+
+## git ##
+
+git config --global user.name "Victor Lin"
+git config --global user.email "13424970+victorlin@users.noreply.github.com"
+git config --global core.editor "code --wait"
+
+## iTerm
+
+curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
