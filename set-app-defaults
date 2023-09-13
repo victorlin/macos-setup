@@ -3,7 +3,7 @@
 ## Rectangle ##
 # For moving/sizing windows.
 
-defaults write com.knollsoft.Rectangle launchOnLogin 1
+defaults write com.knollsoft.Rectangle launchOnLogin -bool true
 
 # CTRL + SHIFT + LEFT
 defaults write com.knollsoft.Rectangle leftHalf '{ keyCode = 123; modifierFlags = 393216; }'
@@ -31,14 +31,8 @@ defaults write com.knollsoft.Rectangle previousDisplay {}
 
 
 ## Maccy ##
-defaults write org.p0deje.Maccy pasteByDefault 1
-
-
-# Tips
-# TODO: notifications off
-
-# Vivaldi
-# TODO: set as default browser
+defaults write org.p0deje.Maccy pasteByDefault -bool true
+defaults write org.p0deje.Maccy hideTitle -bool true
 
 
 ## MenuMeters ##
@@ -77,9 +71,14 @@ defaults write com.lwouis.alt-tab-macos hideColoredCircles -string true
 defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels -string true
 defaults write com.lwouis.alt-tab-macos hideStatusIcons -string true
 
+# Show on screen including mouse
+defaults write com.lwouis.alt-tab-macos showOnScreen -bool true
+
 ## Bartender 4 ##
 
 defaults write com.surteesstudios.Bartender UpdateWelcomeMessageShowAgainB4 -bool true
+defaults write com.surteesstudios.Bartender showMenuBarIcon -bool false
+defaults write com.surteesstudios.Bartender MouseOverDelay -string 0.05
 
 ## git ##
 

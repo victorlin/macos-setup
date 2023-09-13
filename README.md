@@ -18,13 +18,9 @@ Follow [installation instructions](https://brew.sh/).
 
 ## Install Homebrew packages
 
-Do all the following with:
-
     ./install-brew-packages
 
-## Set defaults
-
-Set defaults with computer name of `Name`:
+## Set defaults with computer name of `Name`
 
     ./set-system-defaults Name
     ./set-app-defaults
@@ -71,7 +67,7 @@ Go to past purchases and download apps in bulk. A list that I used at a point in
 - Sound > Sound Effects
     - Play sound on startup: off
 - Focus
-    - Delete focuses synced from iPhone
+    - Delete focuses synced from iCloud account
 - General
     - Login Items
         - Add ActivityWatch
@@ -96,7 +92,12 @@ Go to past purchases and download apps in bulk. A list that I used at a point in
     - Spoken Content
         - System voice > Manage voices… > Chinese > Chinese (Taiwan) - Siri > Download Voice 2
         - Speaking rate: ~40%
-- Displays > Night Shift… > Schedule: Sunset to Sunrise
+- Siri & Spotlight
+    - Search results
+        - Mail & Messages: off
+        - Tips: off
+- Displays
+    - Night Shift… > Schedule: Sunset to Sunrise
 - Lock Screen > Start Screen Saver when inactive: never
 - Keyboard
     - Text Input > Text Replacements… > remove `omw` replacement
@@ -111,6 +112,8 @@ Go to past purchases and download apps in bulk. A list that I used at a point in
 - Remove default widgets like News, Stocks, etc.
 
 ### Vivaldi
+
+#### Browser settings
 
 - Start page > Speed Dial Appearance
     - Thumbnail Size: Icon
@@ -130,9 +133,15 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 - Vivaldi Settings (⌘,)
     - Tabs > Tab Features > Cycle in Tab Order
 
+#### Extension: Redirector
+
+
 ### Finder
 
 - Settings > Sidebar > remove everything but Downloads
+- Dock > Downloads
+    - Display as: Folder
+    - View content as: Grid
 
 ### MenuMeters
 
@@ -153,43 +162,16 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 - Security
     - Concealed Fields > Hold Option to toggle revealed fields: on
 
-### AltTab
-
-- Controls
-    - Shortcut 1: Hold `CMD` and press `tab`
-    - Shortcut 2: Hold `CMD` and press ```
-- Appearance
-    - Show on: Screen including mouse
-    - Hide Space number labels: on
-    - Hide status icons: on
-    - Hide colored circles on mouse hover: on
-
 ### Bartender
 
 - General
     - Startup > Launch Bartender at login: on
-    - Activation > Delay before activating: 0.05 seconds
-    - Bartender menu bar item
-        - Visible: off
-        - Show Hidden Item Divider: on
     - Menu bar item spacing: Small Spacing
 - Menu Bar Layout
     - show MenuMeters
 - Show For Updates
     - Battery: on
     - Wifi: on
-
-### Maccy
-
-- General
-    - Hotkey
-        - `shift`+`CMD`+`V`
-        - Launch at login: yes
-        - Check for updates automatically: yes
-    - Behavior
-        - Paste automatically: yes
-- Appearance
-    - Show title before search field: off
 
 ### Microsoft Edge
 
@@ -216,9 +198,3 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 - Profiles > Default
     - General > Working Directory: Reuse previous session's directory
     - Keys > Key Mappings > Presets… > Natural Text Editing (remove all existing key mappings)
-
-### Finder
-
-- Dock > Downloads
-    - Display as: Folder
-    - View content as: Grid

@@ -7,6 +7,8 @@ export PATH="$HOME/.bin:$PATH"
 
 alias ll='ls -alGh'
 
+alias defaultsdiff='/Users/victor/repos/victorlin/macos-defaults/diff.sh'
+
 function git-prunelocal()
 {
     git fetch --all --prune
