@@ -88,4 +88,7 @@ git config --global core.editor "code --wait"
 
 ## iTerm
 
+defaults write com.googlecode.iterm2 PromptOnQuit -bool true
+defaults write com.googlecode.iterm2 OnlyWhenMoreTabs -bool false
+
 curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
