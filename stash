@@ -1,0 +1,19 @@
+#!/bin/bash
+
+instead:
+
+https://apple.stackexchange.com/questions/33600
+
+defaults write com.apple.dock autohide-delay -int 0; killall Dock
+defaults write com.apple.dock autohide-time-modifier -float 0.5; killall Dock
+defaults write com.apple.screencapture disable-shadow -bool true
+defaults write com.apple.screencapture name ""
+
+# https://apple.stackexchange.com/a/108129
+defaults write com.google.Chrome NSUserKeyEquivalents -dict-add 'Email Page Location' '\0'
+defaults write com.google.Chrome.canary NSUserKeyEquivalents -dict-add 'Email Page Location' '\0'
+defaults write com.apple.Safari NSUserKeyEquivalents -dict-add 'Email Link to This Page' '\0' 'Email This Page' '\0'
+
+# other
+
+sudo pmset -b tcpkeepalive 0

@@ -1,4 +1,3 @@
-tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
 
 cask '1password'

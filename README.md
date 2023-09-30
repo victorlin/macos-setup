@@ -58,6 +58,9 @@ Go to past purchases and download apps in bulk. A list that I used at a point in
 
 - iCloud
     - iCloud Photos: off
+- Wi-Fi
+    - Ask to join networks: off
+    - Ask to join hotspots: off
 - Notifications
     - Notification Center
         - Allow notifications when the display is sleeping: off
@@ -166,7 +169,6 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 
 - General
     - Startup > Launch Bartender at login: on
-    - Menu bar item spacing: Small Spacing
 - Menu Bar Layout
     - show MenuMeters
 - Show For Updates
