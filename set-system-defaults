@@ -309,6 +309,9 @@ defaults write com.apple.finder FavoriteTagNames -array
 # Remove tags from sidebar
 defaults write com.apple.finder ShowRecentTags -bool false
 
+# Don't do anything when clicking the wallpaper
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
