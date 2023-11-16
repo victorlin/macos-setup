@@ -98,7 +98,11 @@ Go to past purchases and download apps in bulk. A list that I used at a point in
 - Siri & Spotlight
     - Search results
         - Mail & Messages: off
+        - Movies: off
         - Tips: off
+    - Spotlight Privacy…
+        - Prevent spotlight from searching these locations
+            - Add development directories to prevent Spotlight from searching the likes of `node_modules`.
 - Displays
     - Night Shift… > Schedule: Sunset to Sunrise
 - Lock Screen > Start Screen Saver when inactive: never

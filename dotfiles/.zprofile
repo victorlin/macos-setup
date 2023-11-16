@@ -54,3 +54,10 @@ compinit
 # move over and edit words in the manner of bash
 autoload -U select-word-style
 select-word-style bash
+
+# Move prompt to bottom
+printf '\n%.0s' {1..100}
+function clear() {
+    command clear;
+    printf '\n%.0s' {1..100};
+}
