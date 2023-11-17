@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Default bin directories are bloated with things that I don't use. This results
+# in an annoyance during tab completion of commands, which isn't terrible, but I
+# wanted to look for a soltuion. This script is an experimentation in that
+# process.
+#
+# I think the only way to get around this is to remove those bin directories
+# from $PATH, and keep copies of what I want to use in a custom bin path. There
+# are two options:
+# 1. Copy only what I see is necessary.
+# 2. Copy everything and remove what I see are unnecessary.
+#
+# I speculate that (1) won't work in the case that programs expect commands in
+# $PATH that I omitted simply because I don't see them as necessary. I could
+# easily try, but for now, I'm going with (2).
+# One downside is that this needs to be regularly maintained/run. I've made the
+# script idempotent in that it removes everything and re-adds upon every
+# invocation.
+
+rm ~/.bin/*
+pushd ~/.bin
+
+# Copy everything from the system bin directory.
+ln -s /usr/bin/* .
+
+# Remove some so they can be replaced by the Homebrew version.
+rm pip3 \
+   python3 \
+   git*
+
+# Copy everything from the homebrew bin directory.
+ln -s /opt/homebrew/bin/* .
+
+# Rename programs to be more memorable/typeable.
+mv python3 python
+mv pip3 pip
+mv youtube-dl yt-dl
+
+# Remove unused commands.
+rm pydoc* \
+   python3*
+
+popd
+
+
+# Homebrew installation does not work with this... don't use it for now.

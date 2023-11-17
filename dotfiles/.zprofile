@@ -3,6 +3,15 @@
 # brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# My own path.
+# export PATH="$HOME/.bin:$PATH"
+
+# # No homebrew path.
+# export PATH=$(echo $PATH | sed -e 's/:\/opt\/homebrew\/bin//')
+
+# # No system path.
+# export PATH=$(echo $PATH | sed -e 's/:\/usr\/bin//')
+
 export PATH="$HOME/.bin:$PATH"
 
 alias ll='ls -alGh'
