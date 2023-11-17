@@ -54,6 +54,20 @@ Go to past purchases and download apps in bulk. A list that I used at a point in
 - Pixelmator Pro
 - Slack for Desktop
 
+Or, here's an output of `mas list`:
+
+```
+1475387142  Tailscale       (1.50.0)
+450527929   djay Pro AI     (4.1.10)
+1435957248  Drafts          (40.0.1)
+634148309   Logic Pro       (10.7.9)
+404705039   Graphic         (3.1)
+497799835   Xcode           (15.0)
+539883307   LINE            (8.3.0)
+1289583905  Pixelmator Pro  (3.4.1)
+409203825   Numbers         (13.2)
+```
+
 ### System Settings
 
 - iCloud
@@ -97,14 +111,18 @@ Go to past purchases and download apps in bulk. A list that I used at a point in
         - Speaking rate: ~40%
 - Siri & Spotlight
     - Search results
+        - Developer: off
+        - Events & Reminders: off
         - Mail & Messages: off
         - Movies: off
+        - Siri Suggestions: off
         - Tips: off
     - Spotlight Privacy…
         - Prevent spotlight from searching these locations
             - Add development directories to prevent Spotlight from searching the likes of `node_modules`.
 - Displays
     - Night Shift… > Schedule: Sunset to Sunrise
+        - For Macs not using Wi-Fi (i.e. ethernet only), the Date & Time must be set manually to closest city since Wi-Fi triangulation will not be available.
 - Lock Screen > Start Screen Saver when inactive: never
 - Keyboard
     - Text Input > Text Replacements… > remove `omw` replacement
@@ -142,6 +160,9 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 
 #### Extension: Redirector
 
+#### Extension: 1Password
+
+- Remove some vaults from autofill
 
 ### Finder
 
@@ -179,18 +200,6 @@ An alternative to the steps below is data synchronization with a Vivaldi account
     - Battery: on
     - Wifi: on
 
-### Microsoft Edge
-
-- Appearance > Customize toolbar
-    - Show vertical tabs for all current browser windows: Turn On
-    - Hide title bar while in vertical tabs: on
-    - Extensions button: Never Show
-- edge://extensions/shortcuts
-    - 1Password
-        - Activate the extension: `shift`+`cmd`+`P`
-- edge://settings/content
-    - Strip down site permissions
-
 ### QLMarkdown
 
 - Just need to right click > Open from Finder to properly initialize.
@@ -204,3 +213,11 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 - Profiles > Default
     - General > Working Directory: Reuse previous session's directory
     - Keys > Key Mappings > Presets… > Natural Text Editing (remove all existing key mappings)
+
+### VSCode
+
+- Turn on Settings Sync via GitHub account
+
+### Command line
+
+- Run `gh auth login` to authenticate git commands

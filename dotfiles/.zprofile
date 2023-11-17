@@ -1,8 +1,5 @@
 #!/bin/zsh
 
-# brew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 export PATH="$HOME/.bin:$PATH"
 
 alias ll='ls -alGh'
@@ -26,13 +23,19 @@ function git() {
 }
 
 # custom ls colors
-export LSCOLORS=GxFxCxDxBxegedabagaced
+# disabled because it doesn't work well with light background
+# export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # allow comments
 setopt interactivecomments
 
 # ignore duplicates in command history
 setopt histignoredups
+
+# Vim key bindings
+# https://superuser.com/a/1759614
+# bindkey -v
+# bindkey -v '^?' backward-delete-char
 
 # https://unix.stackexchange.com/a/319854
 backward-kill-dir () {
@@ -43,12 +46,6 @@ backward-kill-dir () {
 }
 zle -N backward-kill-dir
 bindkey '^[^?' backward-kill-dir
-
-# enable tab completions
-# https://stackoverflow.com/a/58517668
-autoload -Uz compinit
-FPATH=~/.bin/conda-zsh-completion:$FPATH
-compinit
 
 # https://unix.stackexchange.com/a/258661
 # move over and edit words in the manner of bash
