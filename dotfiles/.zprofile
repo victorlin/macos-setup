@@ -15,11 +15,11 @@ function git-prunelocal()
 # prevent some git force pushes
 # https://stackoverflow.com/a/59283949
 function git() {
-  if [[ $@ == 'push -f'* || $@ == 'push --force '*  ]]; then
-    echo Hey stupid, use --force-with-lease instead
-  else
-    command git "$@"
-  fi
+    if [[ $@ == 'push -f'* || $@ == 'push --force '*  ]]; then
+        echo Hey stupid, use --force-with-lease instead
+    else
+        command git "$@"
+    fi
 }
 
 # custom ls colors
@@ -37,6 +37,7 @@ setopt histignoredups
 # bindkey -v
 # bindkey -v '^?' backward-delete-char
 
+# enable option+delete
 # https://unix.stackexchange.com/a/319854
 backward-kill-dir () {
     # remove slash from WORDCHARS so directories can be deleted incrementally
@@ -47,8 +48,8 @@ backward-kill-dir () {
 zle -N backward-kill-dir
 bindkey '^[^?' backward-kill-dir
 
+# enable option+arrows
 # https://unix.stackexchange.com/a/258661
-# move over and edit words in the manner of bash
 autoload -U select-word-style
 select-word-style bash
 
@@ -58,3 +59,19 @@ function clear() {
     command clear;
     printf '\n%.0s' {1..100};
 }
+
+# custom prompt
+update_prompt() {
+    # Indicate conda env: https://unix.stackexchange.com/a/680112
+    if [[ -n $CONDA_DEFAULT_ENV ]]; then
+        CONDA_ENV="* "
+    else
+        CONDA_ENV=""
+    fi
+
+    NEWLINE=$'\n'
+    # Other fun symbols: ▷ ▸ │
+    PROMPT="${NEWLINE}▶ $CONDA_ENV%1~ ▷ "
+}
+precmd_functions+=( update_prompt )
+setopt prompt_subst
