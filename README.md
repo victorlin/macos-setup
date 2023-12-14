@@ -54,18 +54,21 @@ Go to past purchases and download apps in bulk. A list that I used at a point in
 - Pixelmator Pro
 - Slack for Desktop
 
-Or, here's an output of `mas list`:
+Or, here's an output of `mas list | sort -k1 -n`:
 
 ```
-1475387142  Tailscale       (1.50.0)
-450527929   djay Pro AI     (4.1.10)
-1435957248  Drafts          (40.0.1)
-634148309   Logic Pro       (10.7.9)
 404705039   Graphic         (3.1)
-497799835   Xcode           (15.0)
-539883307   LINE            (8.3.0)
-1289583905  Pixelmator Pro  (3.4.1)
+409201541   Pages           (13.2)
 409203825   Numbers         (13.2)
+450527929   djay Pro        (5.0.2)
+497799835   Xcode           (15.1)
+539883307   LINE            (8.5.1)
+634148309   Logic Pro       (10.8.1)
+1289583905  Pixelmator Pro  (3.5)
+1320450034  DaftCloud       (4.0.20)
+1435957248  Drafts          (42.0)
+1460836908  GoPro Player    (2.1.10)
+1475387142  Tailscale       (1.54.1)
 ```
 
 ### System Settings
