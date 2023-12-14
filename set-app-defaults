@@ -1,5 +1,11 @@
 #!/bin/bash
 
+## Archive Utility
+
+# After expanding: move archive to Trash
+defaults write com.apple.archiveutility dearchive-move-after '~/.Trash'
+
+
 ## Rectangle ##
 # For moving/sizing windows.
 
