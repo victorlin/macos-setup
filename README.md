@@ -111,12 +111,20 @@ Or, here's an output of `mas list`:
         - Speaking rate: ~40%
 - Siri & Spotlight
     - Search results
-        - Developer: off
-        - Events & Reminders: off
-        - Mail & Messages: off
-        - Movies: off
-        - Siri Suggestions: off
-        - Tips: off
+        - turn off:
+            - Contacts
+            - Conversion
+            - Developer
+            - Events & Reminders
+            - Fonts
+            - Images
+            - Mail & Messages
+            - Movies
+            - Music
+            - Other
+            - Siri Suggestions
+            - Tips
+            - Websites
     - Spotlight Privacy…
         - Prevent spotlight from searching these locations
             - Add development directories to prevent Spotlight from searching the likes of `node_modules`.
