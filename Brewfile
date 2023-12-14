@@ -40,7 +40,7 @@ brew 'python@3.11'
 brew 'ruby-install'
 brew 'tmux'
 # brew 'ykman'
-brew 'youtube-dl'
+brew 'yt-dlp'
 
 # disable bluetooth on sleep
 brew 'sleepwatcher'
