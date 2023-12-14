@@ -74,6 +74,7 @@ defaults write com.lwouis.alt-tab-macos hideStatusIcons -string true
 # Show on screen including mouse
 defaults write com.lwouis.alt-tab-macos showOnScreen -bool true
 
+
 ## Bartender 4 ##
 
 defaults write com.surteesstudios.Bartender UpdateWelcomeMessageShowAgainB4 -bool true
@@ -81,11 +82,13 @@ defaults write com.surteesstudios.Bartender showMenuBarIcon -bool false
 defaults write com.surteesstudios.Bartender MouseOverDelay -string 0.05
 defaults write com.surteesstudios.Bartender ReduceUpdateCheckFrequencyWhenOnBattery -bool true
 
+
 ## git ##
 
 git config --global user.name "Victor Lin"
 git config --global user.email "13424970+victorlin@users.noreply.github.com"
 git config --global core.editor "code --wait"
+
 
 ## iTerm
 
@@ -93,6 +96,7 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool true
 defaults write com.googlecode.iterm2 OnlyWhenMoreTabs -bool false
 
 curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
+
 
 ## micromamba
 
