@@ -229,3 +229,7 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 ### Command line
 
 - Run `gh auth login` to authenticate git commands
+
+### Install other apps
+
+- [Spotube](https://github.com/KRTirtho/spotube)
