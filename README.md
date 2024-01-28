@@ -71,6 +71,10 @@ Or, here's an output of `mas list | sort -k1 -n`:
 1475387142  Tailscale       (1.54.1)
 ```
 
+### Install other apps
+
+- [Spotube](https://github.com/KRTirtho/spotube)
+
 ### System Settings
 
 - iCloud
