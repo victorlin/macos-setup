@@ -12,10 +12,6 @@ Install command line tools (includes git) with:
 
 Follow [installation instructions](https://brew.sh/).
 
-## Copy dotfiles
-
-    cp -a dotfiles/. ~
-
 ## Install Homebrew packages
 
     ./install-brew-packages
@@ -24,6 +20,7 @@ Follow [installation instructions](https://brew.sh/).
 
     ./set-system-defaults Name
     ./set-app-defaults
+    ./link-dotfiles
 
 Restart machine.
 

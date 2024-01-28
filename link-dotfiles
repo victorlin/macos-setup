@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ln -s ~/repos/victorlin/macos-setup/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/repos/victorlin/macos-setup/dotfiles/.gitignore ~/.gitignore
+ln -s ~/repos/victorlin/macos-setup/dotfiles/.zprofile ~/.zprofile
