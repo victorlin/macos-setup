@@ -4,9 +4,3 @@ echo "Install Homebrew packages"
 brew update
 brew tap Homebrew/bundle
 brew bundle
-
-echo "Install conda-zsh-completion into ~/.bin"
-mkdir ~/.bin
-git clone https://github.com/esc/conda-zsh-completion ~/.bin/conda-zsh-completion
-
-conda init zsh
