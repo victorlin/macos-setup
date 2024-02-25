@@ -10,6 +10,6 @@
         prompt = false
 [alias]
         vimdiff = difftool
-        graph = log --graph --oneline --branches
+        graph = log --graph --oneline
 [tag]
 	sort = -creatordate
