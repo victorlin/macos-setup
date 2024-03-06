@@ -237,6 +237,7 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 ### Install other apps
 
 - [Spotube](https://github.com/KRTirtho/spotube)
+- [Textinator](https://github.com/RhetTbull/textinator)
 
 ```
 pip install spotdl
