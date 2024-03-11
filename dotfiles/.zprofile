@@ -2,6 +2,8 @@
 
 export PATH="$HOME/.bin:$PATH"
 
+source ~/.bin/zsh-autoenv/autoenv.zsh
+
 alias ll='ls -alGh'
 
 alias defaultsdiff='/Users/victor/repos/victorlin/macos-defaults/diff.sh'

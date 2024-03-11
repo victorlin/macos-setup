@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+
+# vd.use_light_colors()
+
+options.theme = 'light'
