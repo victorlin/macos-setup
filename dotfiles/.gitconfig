@@ -11,5 +11,7 @@
 [alias]
         vimdiff = difftool
         graph = log --graph --oneline
+[init]
+        defaultBranch = main
 [tag]
 	sort = -creatordate
