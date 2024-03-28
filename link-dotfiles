@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ln -s ~/repos/victorlin/macos-setup/dotfiles/.ExifTool_config ~/.ExifTool_config
 ln -s ~/repos/victorlin/macos-setup/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/repos/victorlin/macos-setup/dotfiles/.gitignore ~/.gitignore
+ln -s ~/repos/victorlin/macos-setup/dotfiles/.mambarc ~/.mambarc
 ln -s ~/repos/victorlin/macos-setup/dotfiles/.zprofile ~/.zprofile
