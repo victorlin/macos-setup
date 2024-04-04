@@ -20,6 +20,7 @@ Follow [installation instructions](https://brew.sh/).
 
     ./set-system-defaults Name
     ./set-app-defaults
+    sudo ./set-permissions
     ./link-dotfiles
 
 Restart machine.

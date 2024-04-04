@@ -1,0 +1,6 @@
+# SSH security hardening
+# https://apple.stackexchange.com/q/225231
+chmod 700 ~/.ssh
+echo "PermitRootLogin no" > /etc/sshd_config
+echo "PasswordAuthentication no" > /etc/sshd_config
+echo "ChallengeResponseAuthentication no" > /etc/sshd_config
