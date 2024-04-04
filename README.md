@@ -135,7 +135,10 @@ Or, here's an output of `mas list | sort -k1 -n`:
 - Displays
     - Night Shift… > Schedule: Sunset to Sunrise
         - For Macs not using Wi-Fi (i.e. ethernet only), the Date & Time must be set manually to closest city since Wi-Fi triangulation will not be available.
-- Lock Screen > Start Screen Saver when inactive: never
+- Lock Screen
+    - Start Screen Saver when inactive: never
+    - Show large clock: Never
+    - Show user name and photo: off
 - Keyboard
     - Text Input > Text Replacements… > remove `omw` replacement
     - Input Sources
@@ -241,4 +244,5 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 
 ```
 pip install spotdl
+pip install "audio-separator[silicon]"
 ```
