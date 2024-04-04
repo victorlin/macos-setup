@@ -1,12 +1,18 @@
 #!/bin/zsh
 
 export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 source ~/.bin/zsh-autoenv/autoenv.zsh
 
 alias ll='ls -alGh'
 
 alias defaultsdiff='/Users/victor/repos/victorlin/macos-defaults/diff.sh'
+
+# media-related aliases
+alias yt-mp3='yt-dlp --extract-audio --audio-format mp3'
+alias yt-mp4='yt-dlp -S +hdr -S ext:mp4:m4a'
+alias spherify='exiftool -overwrite_original -XMP-GPano:ProjectionType="equirectangular"'
 
 function git-prunelocal()
 {
