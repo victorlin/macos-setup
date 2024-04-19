@@ -10,8 +10,8 @@ alias ll='ls -alGh'
 alias defaultsdiff='/Users/victor/repos/victorlin/macos-defaults/diff.sh'
 
 # media-related aliases
-alias yt-mp3='yt-dlp --extract-audio --audio-format mp3'
-alias yt-mp4='yt-dlp -S +hdr -S ext:mp4:m4a'
+alias yt-mp3='yt-dlp --extract-audio --audio-format mp3 --no-mtime'
+alias yt-mp4='yt-dlp -S +hdr -S ext:mp4:m4a --no-mtime'
 alias spherify='exiftool -overwrite_original -XMP-GPano:ProjectionType="equirectangular"'
 
 function git-prunelocal()
