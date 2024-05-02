@@ -64,22 +64,29 @@ defaults write com.yujitach.MenuMeters "com.ragingmenace.MenuMeterMem" -int 1
 defaults write com.yujitach.MenuMeters "com.ragingmenace.MenuMeterNet" -int 1
 
 
-## AltTab ##
+# ## AltTab ##
 
-# Switch between apps
-defaults write com.lwouis.alt-tab-macos holdShortcut -string '⌘'
+# # Switch between apps
+# defaults write com.lwouis.alt-tab-macos holdShortcut -string '⌘'
 
-# Switch within app
-defaults write com.lwouis.alt-tab-macos holdShortcut2 -string '⌘'
+# # Switch within app
+# defaults write com.lwouis.alt-tab-macos holdShortcut2 -string '⌘'
+
+# # Simplify appearance
+# defaults write com.lwouis.alt-tab-macos hideColoredCircles -string true
+# defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels -string true
+# defaults write com.lwouis.alt-tab-macos hideStatusIcons -string true
+# defaults write com.lwouis.alt-tab-macos hideThumbnails -string true
+
+# # Show on screen including mouse
+# defaults write com.lwouis.alt-tab-macos showOnScreen -bool true
+
+
+## Contexts ##
 
 # Simplify appearance
-defaults write com.lwouis.alt-tab-macos hideColoredCircles -string true
-defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels -string true
-defaults write com.lwouis.alt-tab-macos hideStatusIcons -string true
-defaults write com.lwouis.alt-tab-macos hideThumbnails -string true
-
-# Show on screen including mouse
-defaults write com.lwouis.alt-tab-macos showOnScreen -bool true
+defaults write com.contextsformac.Contexts CTPreferenceSidebarDisplayMode -string CTDisplayModeNone
+defaults write com.contextsformac.Contexts CTPreferencePanelRecentItemsSwitcherKeyType -string CTItemKeyTypeNone
 
 
 ## Bartender 4 ##
