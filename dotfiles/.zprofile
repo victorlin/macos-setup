@@ -14,6 +14,18 @@ alias yt-mp3='yt-dlp --extract-audio --audio-format mp3 --no-mtime'
 alias yt-mp4='yt-dlp -S +hdr -S ext:mp4:m4a --no-mtime'
 alias spherify='exiftool -overwrite_original -XMP-GPano:ProjectionType="equirectangular"'
 
+function copyexif() {
+    local from="$1"
+    local to="$2"
+
+    exiftool \
+        -quiet \
+        -TagsFromFile "$from" \
+        -all:all \
+        -overwrite_original \
+        "$to"
+}
+
 function git-prunelocal()
 {
     git fetch --all --prune
