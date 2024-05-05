@@ -1,3 +1,14 @@
 %Image::ExifTool::UserDefined::Options = (
     MissingTagValue => '',
 );
+
+%Image::ExifTool::UserDefined::Shortcuts = (
+    VideoDates => [
+        'Quicktime:CreateDate',
+        'Quicktime:ModifyDate',
+        'Quicktime:TrackCreateDate',
+        'Quicktime:TrackModifyDate',
+        'Quicktime:MediaCreateDate',
+        'Quicktime:MediaModifyDate',
+    ],
+);
