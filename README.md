@@ -133,6 +133,9 @@ Or, here's an output of `mas list | sort -k1 -n`:
     - Spotlight Privacy…
         - Prevent spotlight from searching these locations
             - Add development directories to prevent Spotlight from searching the likes of `node_modules`.
+- Privacy & Security
+    - Full Disk Access
+        - add Visual Studio Code
 - Displays
     - Night Shift… > Schedule: Sunset to Sunrise
         - For Macs not using Wi-Fi (i.e. ethernet only), the Date & Time must be set manually to closest city since Wi-Fi triangulation will not be available.
