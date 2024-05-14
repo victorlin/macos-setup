@@ -64,29 +64,29 @@ defaults write com.yujitach.MenuMeters "com.ragingmenace.MenuMeterMem" -int 1
 defaults write com.yujitach.MenuMeters "com.ragingmenace.MenuMeterNet" -int 1
 
 
-# ## AltTab ##
+## AltTab ##
 
-# # Switch between apps
-# defaults write com.lwouis.alt-tab-macos holdShortcut -string '⌘'
+# Switch between apps
+defaults write com.lwouis.alt-tab-macos holdShortcut -string '⌘'
 
-# # Switch within app
-# defaults write com.lwouis.alt-tab-macos holdShortcut2 -string '⌘'
-
-# # Simplify appearance
-# defaults write com.lwouis.alt-tab-macos hideColoredCircles -string true
-# defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels -string true
-# defaults write com.lwouis.alt-tab-macos hideStatusIcons -string true
-# defaults write com.lwouis.alt-tab-macos hideThumbnails -string true
-
-# # Show on screen including mouse
-# defaults write com.lwouis.alt-tab-macos showOnScreen -bool true
-
-
-## Contexts ##
+# Switch within app
+defaults write com.lwouis.alt-tab-macos holdShortcut2 -string '⌘'
 
 # Simplify appearance
-defaults write com.contextsformac.Contexts CTPreferenceSidebarDisplayMode -string CTDisplayModeNone
-defaults write com.contextsformac.Contexts CTPreferencePanelRecentItemsSwitcherKeyType -string CTItemKeyTypeNone
+defaults write com.lwouis.alt-tab-macos hideColoredCircles -string true
+defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels -string true
+defaults write com.lwouis.alt-tab-macos hideStatusIcons -string true
+defaults write com.lwouis.alt-tab-macos hideThumbnails -string true
+
+# Vertical layout
+defaults write com.lwouis.alt-tab-macos windowMinWidthInRow -int 100
+defaults write com.lwouis.alt-tab-macos windowMaxWidthInRow -int 100
+defaults write com.lwouis.alt-tab-macos maxWidthOnScreen -int 40
+defaults write com.lwouis.alt-tab-macos iconSize -int 17
+defaults write com.lwouis.alt-tab-macos fontHeight -int 14
+
+# Show on screen including mouse
+defaults write com.lwouis.alt-tab-macos showOnScreen -bool true
 
 
 ## Bartender 4 ##
