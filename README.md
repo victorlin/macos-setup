@@ -227,12 +227,6 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 
 - Profiles > Keyboard > Use Option as Meta key: on
 
-### iTerm
-
-- Profiles > Default
-    - General > Working Directory: Reuse previous session's directory
-    - Keys > Key Mappings > Presets… > Natural Text Editing (remove all existing key mappings)
-
 ### VSCode
 
 - Turn on Settings Sync via GitHub account
