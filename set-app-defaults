@@ -72,6 +72,17 @@ defaults write com.lwouis.alt-tab-macos holdShortcut -string '⌘'
 # Switch within app
 defaults write com.lwouis.alt-tab-macos holdShortcut2 -string '⌘'
 
+# Hotkeys while switcher is open
+defaults write com.lwouis.alt-tab-macos focusWindowShortcut -string '' # default is '<space>'
+defaults write com.lwouis.alt-tab-macos closeWindowShortcut -string '' # default is 'W'
+defaults write com.lwouis.alt-tab-macos minDeminWindowShortcut -string '' # default is 'M'
+defaults write com.lwouis.alt-tab-macos quitAppShortcut -string '' # default is 'Q'
+defaults write com.lwouis.alt-tab-macos toggleFullscreenWindowShortcut -string '' # default is 'F'
+# Make behavior consistent with Vivaldi and VSCode tab cyclers
+# NOTE: this doesn't work when switching within an app, but I rarely use that
+defaults write com.lwouis.alt-tab-macos previousWindowShortcut -string '⇧⇥' # default is '<shift>'
+
+
 # Simplify appearance
 defaults write com.lwouis.alt-tab-macos hideColoredCircles -string true
 defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels -string true
