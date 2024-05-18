@@ -12,9 +12,10 @@ Install command line tools (includes git) with:
 
 Follow [installation instructions](https://brew.sh/).
 
-## Install Homebrew packages
+## Install packages
 
     ./install-brew-packages
+    ./install-other-packages
 
 ## Set defaults with computer name of `Name`
 

@@ -3,7 +3,7 @@
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
-source ~/.bin/zsh-autoenv/autoenv.zsh
+source ~/.local/zsh-autoenv/autoenv.zsh
 
 alias ll='ls -alGh'
 
