@@ -31,7 +31,7 @@ sudo nvram StartupMute=%01
 defaults write NSGlobalDomain com.apple.sound.beep.volume -float 0
 
 # Reduce transparency
-# This currently doesn't work: https://github.com/mathiasbynens/dotfiles/issues/1027
+# Requires Full Disk Access for calling application
 defaults write com.apple.universalaccess reduceTransparency 1
 
 # Menu bar: always show date and seconds

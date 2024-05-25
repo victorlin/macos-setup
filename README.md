@@ -2,6 +2,12 @@
 
 This is how I set up a new device running macOS. Tested on macOS Ventura (13.3.1) and Sonoma Beta 7 (14.0).
 
+## Give Terminal Full Disk Access
+
+Go to System Settings > Privacy & Security > Full Disk Access and enable Terminal.
+
+This is required to run some commands in `set-system-defaults`.
+
 ## Install Homebrew
 
 Follow [installation instructions](https://brew.sh/).
@@ -97,8 +103,6 @@ Or, here's an output of `mas list | sort -k1 -n`:
     - Application windows: `-`
     - Show Desktop: `-`
 - Accessibility
-    - Display
-        - Reduce transparency: on
     - Zoom
         - Use keyboard shortcuts to zoom: on
         - Use scroll gesture with modifier keys to zoom: on
