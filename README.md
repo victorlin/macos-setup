@@ -77,6 +77,12 @@ Or, here's an output of `mas list | sort -k1 -n`:
 ### Install other apps
 
 - [Spotube](https://github.com/KRTirtho/spotube)
+- [Textinator](https://github.com/RhetTbull/textinator)
+
+```
+pip install spotdl
+pip install "audio-separator[silicon]"
+```
 
 ### System Settings
 
@@ -235,13 +241,3 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 ### Command line
 
 - Run `gh auth login` to authenticate git commands
-
-### Install other apps
-
-- [Spotube](https://github.com/KRTirtho/spotube)
-- [Textinator](https://github.com/RhetTbull/textinator)
-
-```
-pip install spotdl
-pip install "audio-separator[silicon]"
-```
