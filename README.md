@@ -2,15 +2,13 @@
 
 This is how I set up a new device running macOS. Tested on macOS Ventura (13.3.1) and Sonoma Beta 7 (14.0).
 
-## Install command line tools
-
-Install command line tools (includes git) with:
-
-    xcode-select --install
-
 ## Install Homebrew
 
 Follow [installation instructions](https://brew.sh/).
+
+This should also install command line tools (includes git). If it doesn't, install with:
+
+    xcode-select --install
 
 ## Install packages
 
