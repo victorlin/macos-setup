@@ -50,3 +50,7 @@ brew 'yt-dlp'
 # disable bluetooth on sleep
 brew 'sleepwatcher'
 brew 'blueutil'
+
+# For home server
+cask 'photosync' # iOS photo sync
+cask 'syncthing' # Android file sync
