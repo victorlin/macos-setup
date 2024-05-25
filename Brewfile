@@ -2,12 +2,11 @@ tap 'homebrew/cask-versions'
 
 cask '1password'
 cask 'activitywatch'
-# cask 'alt-tab'  # old app switcher
+cask 'alt-tab'
 cask 'android-platform-tools'
 cask 'bartender'
 # cask 'brave-browser'
 cask 'coconutbattery'
-cask 'contexts'  # app switcher
 cask 'daisydisk'
 cask 'db-browser-for-sqlite'
 cask 'dbeaver-community'
