@@ -25,8 +25,7 @@ sudo scutil --set LocalHostName $name && \
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $name
 
 # Disable the sound effects on boot
-# this doesn't seem to work
-sudo nvram SystemAudioVolume=" "
+sudo nvram StartupMute=%01
 
 # Turn off Alert volume
 defaults write NSGlobalDomain com.apple.sound.beep.volume -float 0

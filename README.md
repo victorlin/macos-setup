@@ -87,8 +87,6 @@ Or, here's an output of `mas list | sort -k1 -n`:
         - Allow notifications when the screen is locked: off
     - Application Notifications
         - Tips: off
-- Sound > Sound Effects
-    - Play sound on startup: off
 - Focus
     - Delete focuses synced from iCloud account
 - General
