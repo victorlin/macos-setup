@@ -115,9 +115,9 @@ pip install "audio-separator[silicon]"
         - Zoom style: Picture in picture
         - Advanced
             - Appearance
-                - When zoomed in, the screen image moves: So the pointer is at or near the center of the zoomed image
+                - Zoomed image moves: To Keep Pointer Centered
                 - Smooth images: off
-            - Controls > Hold `ctrl`+`option` to temporarily toggle zoom
+            - Modifiers for Temporary Actions > Toggle zoom: on
     - Spoken Content
         - System voice > Manage voices… > Chinese > Chinese (Taiwan) - Siri > Download Voice 2
         - Speaking rate: ~40%
