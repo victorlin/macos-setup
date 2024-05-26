@@ -187,6 +187,11 @@ defaults write -g com.apple.keyboard.fnState -bool false
 # Enable keyboard shortcut for cycling through input sources
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 "{enabled = 1; value = { parameters = (32, 49, 262144); type = 'standard'; }; }"
 
+# Prevent CMD+I from opening mail app
+# <https://apple.stackexchange.com/a/108129>
+# TODO: check that this works
+defaults write com.apple.Safari NSUserKeyEquivalents -dict-add 'Email Link to This Page' '\0' 'Email This Page' '\0'
+
 # Disable Universal Control
 defaults write com.apple.universalcontrol Disable -bool true
 defaults write com.apple.universalcontrol DisableMagicEdges -bool true
