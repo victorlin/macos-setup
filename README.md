@@ -216,15 +216,9 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 - Security
     - Concealed Fields > Hold Option to toggle revealed fields: on
 
-### Bartender
+### Ice
 
-- General
-    - Startup > Launch Bartender at login: on
-- Menu Bar Layout
-    - show MenuMeters
-- Show For Updates
-    - Battery: on
-    - Wifi: on
+- Show MenuMeters
 
 ### QLMarkdown
 
