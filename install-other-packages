@@ -2,5 +2,7 @@ mkdir ~/.bin
 
 curl -fsSL https://recs.pl > ~/.bin/recs
 chmod +x ~/.bin/recs
+curl -fsSL 'https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper/releases/download/v3.4.3/gpth-macos' > ~/.bin/gpth
+chmod +x ~/.bin/gpth
 
 git clone https://github.com/Tarrasch/zsh-autoenv ~/.local/zsh-autoenv
