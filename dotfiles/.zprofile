@@ -12,12 +12,13 @@ alias defaultsdiff='/Users/victor/repos/victorlin/macos-defaults/diff.sh'
 # media-related aliases
 alias yt-mp3='yt-dlp --extract-audio --audio-format mp3 --no-mtime'
 alias yt-mp4='yt-dlp -S +hdr -S ext:mp4:m4a --no-mtime'
+alias exif-info='exiftool -duplicates -groupNames:1 -short -extractEmbedded --printConv'
 alias spherify='exiftool -overwrite_original -XMP-GPano:ProjectionType="equirectangular"'
-alias exiftool-overwrite='exiftool -overwrite_original'
 alias fix-go3-seattle='exiftool -overwrite_original -Make="Insta360" -Model="GO 3" -AllDates+=7 -VideoDates+=7'
-alias export-editor='osxphotos export --library ~/Pictures/editor.photoslibrary/ --exiftool --'
+alias exif-add-gopro='exiftool -overwrite_original -Keys:Make=GoPro "-Keys:Model<GoPro:Model"'
+alias export-editor='osxphotos export --library ~/Pictures/editor.photoslibrary/ --exiftool --no-exportdb -- ~/tmp/photos'
 
-function copyexif() {
+function exif-copy() {
     local from="$1"
     local to="$2"
 

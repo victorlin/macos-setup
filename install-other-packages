@@ -1,9 +1,6 @@
 mkdir ~/.bin
-pushd ~/.bin
 
-curl -fsSL https://recs.pl > recs
-chmod +x recs
-
-popd
+curl -fsSL https://recs.pl > ~/.bin/recs
+chmod +x ~/.bin/recs
 
 git clone https://github.com/Tarrasch/zsh-autoenv ~/.local/zsh-autoenv
