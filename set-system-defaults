@@ -429,8 +429,9 @@ defaults write com.apple.commerce AutoUpdate -bool true
 # Disable shadow on screen shots
 defaults write com.apple.screencapture disable-shadow -bool true
 
-# Remove "Screen shot" prefix from file name (still has a space as first character)
-defaults write com.apple.screencapture name ""
+# Custom file prefix
+# https://apple.stackexchange.com/q/245771
+defaults write com.apple.screencapture name "Screenshot"
 
 # Save screen shots to downloads
 defaults write com.apple.screencapture location "~/Downloads"
