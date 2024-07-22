@@ -198,6 +198,23 @@ defaults write -g AppleKeyboardUIMode -int 2
 defaults write com.apple.screensaver idleTime -int 0
 defaults write com.apple.screensaver lastDelayTime -int 1200
 
+## Picture-in-Picture Zoom
+
+# Enable zoom with scroll
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+
+# Picture-in-Picture zoom style
+defaults write com.apple.universalaccess closeViewZoomMode -int 1
+
+# Zoomed image moves to keep pointer centered
+defaults write com.apple.universalaccess closeViewPanningMode -int 2
+
+# Don't smooth images
+defaults write com.apple.universalaccess closeViewSmoothImages -bool false
+
+# Toggle zoom with ctrl+option
+defaults write com.apple.universalaccess closeViewPressOnReleaseOff -bool false
+
 ###############################################################################
 # Energy                                                                      #
 ###############################################################################
