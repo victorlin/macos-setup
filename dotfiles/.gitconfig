@@ -5,11 +5,10 @@
         email = 13424970+victorlin@users.noreply.github.com
         name = Victor Lin
 [diff]
-        tool = vimdiff
-[difftool]
-        prompt = false
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE --yes
 [alias]
-        vimdiff = difftool
         graph = log --graph --oneline
 [init]
         defaultBranch = main
