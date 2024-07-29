@@ -1,0 +1,50 @@
+#!/bin/bash
+
+brew install \
+  awscli \
+  azure-cli \
+  bash \
+  blueutil \
+  duti \
+  exiftool \
+  ffmpeg \
+  gh \
+  git \
+  jq \
+  micromamba \
+  node@20 \
+  openssl@3 \
+  pipx \
+  python@3.12 \
+  r \
+  ruby \
+  sleepwatcher \
+  sqlite \
+  visidata \
+  yt-dlp \
+  zstd
+
+brew install --cask \
+  1password \
+  activitywatch \
+  alt-tab \
+  battery \
+  coconutbattery \
+  daisydisk \
+  db-browser-for-sqlite \
+  dbeaver-community \
+  discord \
+  docker \
+  doll \
+  jordanbaird-ice \
+  jupyter-notebook-viewer \
+  maccy \
+  menumeters \
+  microsoft-azure-storage-explorer \
+  playcover-community \
+  qlmarkdown \
+  rectangle \
+  spotify \
+  visual-studio-code \
+  vivaldi \
+  zoom
