@@ -7,4 +7,7 @@
 
 .npmrc
 
+.mypy_cache/
+*.pyc
+
 .vscode/
