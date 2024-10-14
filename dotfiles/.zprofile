@@ -35,9 +35,11 @@ alias yt-mp3='yt-dlp --extract-audio --audio-format mp3 --no-mtime'
 alias yt-mp4='yt-dlp -S +hdr -S ext:mp4:m4a --no-mtime'
 alias exif-info='exiftool -duplicates -groupNames:1 -short -extractEmbedded --printConv'
 alias spherify='exiftool -overwrite_original -XMP-GPano:ProjectionType="equirectangular"'
-alias fix-go3-seattle='exiftool -overwrite_original -Make="Insta360" -Model="GO 3" -AllDates+=7 -VideoDates+=7'
+alias exif-add-go3-set-pdt='exiftool -overwrite_original -Keys:Make="Insta360" -Keys:Model="GO 3" -AllDates+=7 -VideoDates+=7'
+alias exif-add-go3-set-pst='exiftool -overwrite_original -Keys:Make="Insta360" -Keys:Model="GO 3" -AllDates+=8 -VideoDates+=8'
+alias exif-add-go3='exiftool -overwrite_original -Keys:Make="Insta360" -Keys:Model="GO 3"'
 alias exif-add-gopro='exiftool -overwrite_original -Keys:Make=GoPro "-Keys:Model<GoPro:Model"'
-alias export-editor='osxphotos export --library ~/Pictures/editor.photoslibrary/ --exiftool --no-exportdb -- ~/tmp/photos'
+alias export-editor='osxphotos export --library ~/Pictures/editor.photoslibrary/ --skip-original-if-edited --exiftool --no-exportdb -- ~/Pictures/export'
 
 function exif-copy() {
     local from="$1"
