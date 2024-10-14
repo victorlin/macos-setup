@@ -1,5 +1,28 @@
 #!/bin/zsh
 
+# Move prompt to bottom
+printf '\n%.0s' {1..100}
+function clear() {
+    command clear;
+    printf '\n%.0s' {1..100};
+}
+
+# custom prompt
+update_prompt() {
+    # Indicate conda env: https://unix.stackexchange.com/a/680112
+    if [[ -n $CONDA_DEFAULT_ENV ]]; then
+        CONDA_ENV="* "
+    else
+        CONDA_ENV=""
+    fi
+
+    NEWLINE=$'\n'
+    # Other fun symbols: ▷ ▸ │
+    PROMPT="${NEWLINE}▶ $CONDA_ENV%1~ ▷ "
+}
+precmd_functions+=( update_prompt )
+setopt prompt_subst
+
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -76,26 +99,3 @@ bindkey '^[^?' backward-kill-dir
 # https://unix.stackexchange.com/a/258661
 autoload -U select-word-style
 select-word-style bash
-
-# Move prompt to bottom
-printf '\n%.0s' {1..100}
-function clear() {
-    command clear;
-    printf '\n%.0s' {1..100};
-}
-
-# custom prompt
-update_prompt() {
-    # Indicate conda env: https://unix.stackexchange.com/a/680112
-    if [[ -n $CONDA_DEFAULT_ENV ]]; then
-        CONDA_ENV="* "
-    else
-        CONDA_ENV=""
-    fi
-
-    NEWLINE=$'\n'
-    # Other fun symbols: ▷ ▸ │
-    PROMPT="${NEWLINE}▶ $CONDA_ENV%1~ ▷ "
-}
-precmd_functions+=( update_prompt )
-setopt prompt_subst
