@@ -14,3 +14,7 @@
         defaultBranch = main
 [tag]
 	sort = -creatordate
+[rebase]
+	autosquash = true
+[branch]
+	sort = -committerdate
