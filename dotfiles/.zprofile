@@ -26,8 +26,6 @@ setopt prompt_subst
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
-source ~/.local/zsh-autoenv/autoenv.zsh
-
 alias ll='ls -alGh'
 
 alias defaultsdiff='/Users/victor/repos/victorlin/macos-defaults/diff.sh'
@@ -99,3 +97,5 @@ bindkey '^[^?' backward-kill-dir
 # https://unix.stackexchange.com/a/258661
 autoload -U select-word-style
 select-word-style bash
+
+# App-specific stuff below (untracked)
