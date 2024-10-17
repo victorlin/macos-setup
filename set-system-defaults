@@ -306,6 +306,9 @@ defaults write com.apple.finder ShowRecentTags -bool false
 # Don't do anything when clicking the wallpaper
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
+# Remove margins from tiled windows
+defaults write com.apple.WindowManager EnableTiledWindowMargins -bool false
+
 # Set VSCode as default app for opening text-related files
 # <https://www.darraghoriordan.com/2021/09/15/vscode-default-text-files-mac>
 duti -s com.microsoft.VSCode public.json all
