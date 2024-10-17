@@ -17,10 +17,17 @@ update_prompt() {
     fi
 
     NEWLINE=$'\n'
-    PROMPT="${NEWLINE}▶ $CONDA_ENV%1~ ▷ "
+    PROMPT="${NEWLINE}▶ [%*] $CONDA_ENV%1~ ▷ "
 }
 precmd_functions+=( update_prompt )
 setopt prompt_subst
+
+# Keep time in prompt up to date
+# https://stackoverflow.com/a/17915260
+TMOUT=1
+TRAPALRM() {
+    zle reset-prompt
+}
 
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
