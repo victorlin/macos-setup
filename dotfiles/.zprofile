@@ -17,7 +17,6 @@ update_prompt() {
     fi
 
     NEWLINE=$'\n'
-    # Other fun symbols: ▷ ▸ │
     PROMPT="${NEWLINE}▶ $CONDA_ENV%1~ ▷ "
 }
 precmd_functions+=( update_prompt )
