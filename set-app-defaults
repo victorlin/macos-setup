@@ -66,11 +66,11 @@ defaults write com.yujitach.MenuMeters "com.ragingmenace.MenuMeterNet" -int 1
 
 ## AltTab ##
 
-# Switch between apps
-defaults write com.lwouis.alt-tab-macos holdShortcut -string '⌘'
+# Start fresh
+defaults delete com.lwouis.alt-tab-macos
 
-# Switch within app
-defaults write com.lwouis.alt-tab-macos holdShortcut2 -string '⌘'
+defaults write com.lwouis.alt-tab-macos holdShortcut -string '⌘'  # use ⌘ to switch between apps
+defaults write com.lwouis.alt-tab-macos holdShortcut2 -string '⌘' # and within within apps
 
 # Hotkeys while switcher is open
 defaults write com.lwouis.alt-tab-macos focusWindowShortcut -string '' # default is '<space>'
@@ -82,22 +82,11 @@ defaults write com.lwouis.alt-tab-macos toggleFullscreenWindowShortcut -string '
 # NOTE: this doesn't work when switching within an app, but I rarely use that
 defaults write com.lwouis.alt-tab-macos previousWindowShortcut -string '⇧⇥' # default is '<shift>'
 
-
-# Simplify appearance
-defaults write com.lwouis.alt-tab-macos hideColoredCircles -string true
+# Appearance
 defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels -string true
-defaults write com.lwouis.alt-tab-macos hideStatusIcons -string true
-defaults write com.lwouis.alt-tab-macos hideThumbnails -string true
-
-# Vertical layout
-defaults write com.lwouis.alt-tab-macos windowMinWidthInRow -int 100
-defaults write com.lwouis.alt-tab-macos windowMaxWidthInRow -int 100
-defaults write com.lwouis.alt-tab-macos maxWidthOnScreen -int 40
-defaults write com.lwouis.alt-tab-macos iconSize -int 17
-defaults write com.lwouis.alt-tab-macos fontHeight -int 14
-
-# Show on screen including mouse
-defaults write com.lwouis.alt-tab-macos showOnScreen -bool true
+defaults write com.lwouis.alt-tab-macos appearanceStyle -int 2 # vertical
+defaults write com.lwouis.alt-tab-macos appearanceSize -int 0
+defaults write com.lwouis.alt-tab-macos showOnScreen -bool true # Show on screen including mouse
 
 
 ## git ##
