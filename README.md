@@ -172,6 +172,8 @@ An alternative to the steps below is data synchronization with a Vivaldi account
     - Allow sites to check if you have payment methods saved: off
 - chrome://settings/addresses
     - Save and fill addresses: off
+- chrome://settings/content/federatedIdentityApi
+    - Third-party sign-in: Block sign-in prompts from identity services
 - Vivaldi Settings (⌘,)
     - Tabs > Tab Features > Cycle in Tab Order
 
