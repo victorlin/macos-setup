@@ -1,0 +1,146 @@
+{
+    // https://code.visualstudio.com/docs/getstarted/settings#_default-settings
+    "$schema": "vscode://schemas/settings/user",
+
+    /****** general appearance ******/
+    "breadcrumbs.enabled": true,
+    "editor.minimap.enabled": false,
+    "window.commandCenter": false,
+    "window.restoreWindows": "none",
+    "window.zoomLevel": 0,
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.showTabs": "none",
+    "workbench.layoutControl.enabled": false,
+    "workbench.localHistory.enabled": false,
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+
+    /****** general behavior ******/
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "search.sortOrder": "modified",
+    "search.useParentIgnoreFiles": true,
+    "security.promptForLocalFileProtocolHandling": false,
+    "terminal.integrated.inheritEnv": false,
+
+    /****** editor ******/
+    "editor.accessibilitySupport": "off",
+    "editor.autoIndent": "keep",
+    "editor.formatOnPaste": false,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.linkedEditing": true,
+    "editor.renderWhitespace": "selection",
+    "editor.useTabStops": false,
+
+    /****** diffs ******/
+    "diffEditor.experimental.showMoves": true,
+    "diffEditor.experimental.useTrueInlineView": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": true,
+
+    /****** color ******/
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Default Light Modern",
+    "workbench.colorCustomizations": {
+        "[*Dark*]": {
+            "editor.background": "#111",
+            "sideBar.background": "#111",
+            "terminal.background": "#111",
+        }
+    },
+
+    /****** titles ******/
+    "window.title": "${rootName}${separator}${activeEditorShort}",
+    "workbench.editor.customLabels.patterns": {
+        "**/index.*": "${dirname}/${filename}.${extname}",
+    },
+
+    /****** line length helpers ******/
+    "[git-commit]": { "editor.rulers": [ 72 ] },
+                                        // "editor.rulers": [ 80 ],
+                                        // "rewrap.wrappingColumn": 79,
+
+    /****** LLMs ******/
+    "editor.inlineSuggest.enabled": false,
+
+    /****** copilot ******/
+    // "github.copilot.editor.enableCodeActions": false,
+    // "scm.showInputActionButton": false,
+    // getting rid of copilot "explain" suggestion but might have some other side effects
+    // https://stackoverflow.com/a/78600685
+    // "terminal.integrated.shellIntegration.enabled": false,
+
+    /****** git ******/
+    "git.allowForcePush": true,
+    "git.autofetch": true,
+    "git.confirmForcePush": false,
+    "git.mergeEditor": true,
+    "git.openRepositoryInParentFolders": "never",
+    "git.showActionButton": { "commit": false, "publish": false, "sync": false },
+    "git.useForcePushWithLease": true,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.graph.dimMergeCommits": true,
+    "gitlens.graph.minimap.additionalTypes": [],
+    "gitlens.graph.minimap.enabled": false,
+    "scm.showIncomingChanges": "never",
+    "scm.showOutgoingChanges": "never",
+    "scm.showHistoryGraph": false,
+
+    /****** GitHub ******/
+    "githubPullRequests.commentExpandState": "collapseAll",
+    "githubPullRequests.fileListLayout": "tree",
+    "githubPullRequests.pullBranch": "never",
+    "githubPullRequests.terminalLinksHandler": "github",
+    "githubPullRequests.queries": [],
+
+    /****** vim ******/
+    "vim.handleKeys": { "<D-c>": false, "<D-v>": false, "<D-d>": false, "<C-g>": false },
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.startInInsertMode": false,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+
+    /****** CSV extension ******/
+    "csv-preview.hasHeaders": true,
+
+    /****** Python ******/
+    "[python]": { "editor.formatOnType": true },
+                                        // "python.analysis.typeCheckingMode":"basic",
+                                        // "python.languageServer": "Default",
+    "python.analysis.indexing": true,
+    "pylint.args": [
+        "--disable=W1309",
+        "--disable=W1510",
+        "--disable=W1514",
+    ],
+
+    /****** reStructuredText/Sphinx ******/
+    "[restructuredtext]": { "editor.wordWrap": "on" },
+    "esbonio.server.enabled": false,
+    "esbonio.server.enabledInPyFiles": false,
+
+    /****** JavaScript/TypeScript ******/
+    "jest.autoRun": "off",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+                                        // linting on all files <https://stackoverflow.com/a/60116499>
+                                        // "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+
+    /****** Markdown ******/
+    "[markdown]": { "editor.pasteAs.enabled": false, },
+    "markdown.extension.list.indentationSize": "inherit",
+    "markdown.extension.toc.updateOnSave": false,
+
+    /****** JSON ******/
+    "files.associations": { "*.json": "jsonc" },
+    "json.schemas": [{ "schema": { "allowTrailingCommas": true }, "fileMatch": ["*.json", "*.jsonc"] }],
+
+    /****** Untracked section below ******/
+
+    // "terminal.integrated.env.osx": {
+    //     "VISUAL": "code --wait"
+    // },
+}
