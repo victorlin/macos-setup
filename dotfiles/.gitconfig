@@ -1,6 +1,5 @@
 [core]
         excludesfile = /Users/victor/.gitignore
-        editor = code --wait
 [user]
         email = 13424970+victorlin@users.noreply.github.com
         name = Victor Lin
