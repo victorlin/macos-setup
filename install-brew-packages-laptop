@@ -29,6 +29,7 @@ brew install --cask \
   activitywatch \
   alt-tab \
   battery \
+  betterdisplay \
   coconutbattery \
   daisydisk \
   db-browser-for-sqlite \
@@ -41,6 +42,7 @@ brew install --cask \
   maccy \
   menumeters \
   microsoft-azure-storage-explorer \
+  namechanger \
   playcover-community \
   qlmarkdown \
   rectangle \
