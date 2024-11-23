@@ -4,5 +4,6 @@ ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.ExifTool_config ~/.ExifTool_confi
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.gitconfig ~/.gitconfig
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.gitignore ~/.gitignore
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.mambarc ~/.mambarc
+ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.sqliterc ~/.sqliterc
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.visidatarc ~/.visidatarc
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.zprofile ~/.zprofile
