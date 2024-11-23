@@ -106,4 +106,4 @@ bindkey '^[^?' backward-kill-dir
 autoload -U select-word-style
 select-word-style bash
 
-# App-specific stuff below (untracked)
+# Untracked section below
