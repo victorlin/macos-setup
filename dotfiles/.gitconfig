@@ -3,10 +3,6 @@
 [user]
         email = 13424970+victorlin@users.noreply.github.com
         name = Victor Lin
-[diff]
-	tool = vscode
-[difftool "vscode"]
-	cmd = code --wait --diff $LOCAL $REMOTE --yes
 [alias]
         graph = log --graph --oneline
 [init]
