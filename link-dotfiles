@@ -1,11 +1,14 @@
 #!/bin/bash
 
+vscode="VSCodium" // Code
+ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.vscode_keybindings.json ~/"Library/Application Support/$vscode/User/keybindings.json"
+# can't link because this needs to be customized for different instances
+cp ~/repos/victorlin/macos-setup/dotfiles/.vscode_settings.json ~/"Library/Application Support/$vscode/User/settings.json"
+
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.ExifTool_config ~/.ExifTool_config
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.gitconfig ~/.gitconfig
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.gitignore ~/.gitignore
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.mambarc ~/.mambarc
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.sqliterc ~/.sqliterc
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.visidatarc ~/.visidatarc
-ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.vscode_keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.vscode_settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -Fs ~/repos/victorlin/macos-setup/dotfiles/.zprofile ~/.zprofile
