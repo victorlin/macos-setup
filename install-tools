@@ -61,3 +61,6 @@ curl -fsSL 'https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper/releases/
 chmod +x ~/.bin/gpth
 
 git clone https://github.com/Tarrasch/zsh-autoenv ~/.local/zsh-autoenv
+
+curl -sSL https://install.python-poetry.org | python3 -
+poetry config virtualenvs.in-project true
