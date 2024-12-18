@@ -89,6 +89,11 @@ defaults write com.lwouis.alt-tab-macos appearanceSize -int 0
 defaults write com.lwouis.alt-tab-macos showOnScreen -bool true # Show on screen including mouse
 
 
+## BetterDisplay ##
+
+defaults write pro.betterdisplay.BetterDisplay videoMediaKeyFineControlByDefault -bool true
+
+
 ## git ##
 
 git config --global user.name "Victor Lin"
