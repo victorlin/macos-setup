@@ -46,6 +46,8 @@ alias exif-add-go3-set-pst='exiftool -overwrite_original -Keys:Make="Insta360" -
 alias exif-add-go3='exiftool -overwrite_original -Keys:Make="Insta360" -Keys:Model="GO 3"'
 alias exif-add-gopro='exiftool -overwrite_original -Keys:Make=GoPro "-Keys:Model<GoPro:Model"'
 alias export-editor='osxphotos export --library ~/Pictures/editor.photoslibrary/ --skip-original-if-edited --exiftool --no-exportdb -- ~/Pictures/export'
+alias export-icloud='osxphotos export --library ~/Pictures/icloud.photoslibrary/ --skip-original-if-edited --exiftool --no-exportdb --not-syndicated --not-shared -- ~/Pictures/export'
+alias reset-final-cut-pro-trial='rm ~/Library/Application\ Support/.ffuserdata'
 
 function exif-copy() {
     local from="$1"
