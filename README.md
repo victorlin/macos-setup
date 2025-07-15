@@ -228,3 +228,11 @@ An alternative to the steps below is data synchronization with a Vivaldi account
 ### Command line
 
 - Run `gh auth login` to authenticate git commands
+
+### iTerm
+
+- Profiles
+    - Advanced > Triggers
+        - `^▶ \[\d{1,2}:\d{2}:\d{2}\] (?:\* )?[A-Za-z0-9_~-]+ ▷\s*`: Prompt Detected
+    - Keys > Key Bindings
+        - Use "Natural Text Editing" preset
