@@ -48,6 +48,46 @@ alias exif-add-gopro='exiftool -overwrite_original -Keys:Make=GoPro "-Keys:Model
 alias export-editor='osxphotos export --library ~/Pictures/editor.photoslibrary/ --skip-original-if-edited --exiftool --no-exportdb -- ~/Pictures/export'
 alias export-icloud='osxphotos export --library ~/Pictures/icloud.photoslibrary/ --skip-original-if-edited --exiftool --no-exportdb --not-syndicated --not-shared -- ~/Pictures/export'
 alias reset-final-cut-pro-trial='rm ~/Library/Application\ Support/.ffuserdata'
+alias rm-ds='find . -type f -name ".DS_Store" -print -delete'
+
+# Compress a directory into <dir>.tar.zst
+function zstd-dir() {
+  if [[ $# -ne 1 ]]; then
+    echo "Usage: zstd-dir <directory>"
+    return 1
+  fi
+  local dir="$1"
+  if [[ ! -d "$dir" ]]; then
+    echo "Error: '$dir' is not a directory"
+    return 1
+  fi
+
+  local archive="${dir}.tar.zst"
+
+  tar -cf - "$dir" \
+    | zstd -T0 -o "$archive" \
+    && echo "Created $archive"
+
+  touch -r "$dir" "$archive"
+}
+
+# Decompress a directory from <dir>.tar.zst
+function unzstd-dir() {
+  if [[ $# -ne 1 ]]; then
+    echo "Usage: unzstd-dir <archive.tar.zst>"
+    return 1
+  fi
+  local archive="$1"
+  if [[ ! -f "$archive" ]]; then
+    echo "Error: '$archive' not found"
+    return 1
+  fi
+  # Strip a trailing .tar.zst to get the target directory name
+  local dir="${archive%.tar.zst}"
+  zstd -d "$archive" -c \
+    | gtar --delay-directory-restore -xpf - && \
+    echo "Restored directory '$dir'"
+}
 
 function exif-copy() {
     local from="$1"
