@@ -87,6 +87,8 @@ defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels -string true
 defaults write com.lwouis.alt-tab-macos appearanceStyle -int 2 # vertical
 defaults write com.lwouis.alt-tab-macos appearanceSize -int 0
 defaults write com.lwouis.alt-tab-macos showOnScreen -bool true # Show on screen including mouse
+defaults write com.lwouis.alt-tab-macos showHiddenWindows -int 2 # Show hidden windows at the end
+defaults write com.lwouis.alt-tab-macos showMinimizedWindows -int 2 # Show minimized windows at the end
 
 
 ## BetterDisplay ##
