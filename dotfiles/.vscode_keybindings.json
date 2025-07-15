@@ -21,6 +21,9 @@
     { "key": "k", "command": "cursorUp", "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal' && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible" },
     { "key": "j", "command": "cursorDown", "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal' && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible" },
 
+    // intentional quits only <https://github.com/microsoft/vscode/issues/14710#issuecomment-992780085>
+    { "key": "cmd+q q", "command": "workbench.action.quit" },
+    { "key": "cmd+q cmd+q", "command": "workbench.action.quit" },
 
     /****** Sidebar ******/
 
