@@ -20,10 +20,17 @@
     /****** general behavior ******/
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
+    "files.hotExit": "off",
+    "gitlens.telemetry.enabled": false,
+    "redhat.telemetry.enabled": false,
+    "remote.SSH.connectTimeout": 60,
     "search.sortOrder": "modified",
     "search.useParentIgnoreFiles": true,
     "security.promptForLocalFileProtocolHandling": false,
+    "telemetry.telemetryLevel": "error",
+    "terminal.integrated.confirmOnExit": "always",
     "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.showExitAlert": true,
 
     /****** editor ******/
     "editor.accessibilitySupport": "off",
